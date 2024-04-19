@@ -14,45 +14,13 @@
   "files": [
     "dist/**/*",
     "index.js",
-    "index.d.ts",
-    "lite.js",
-    "lite.d.ts"
+    "index.d.ts"
   ],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
       "require": "./dist/index.cjs",
       "default": "./dist/index.js"
-    },
-    "./lite": {
-      "types": "./dist/lite.d.ts",
-      "require": "./dist/lite.cjs",
-      "default": "./dist/lite.js"
-    },
-    "./ranks/cl100k_base": {
-      "types": "./dist/ranks/cl100k_base.d.ts",
-      "require": "./dist/ranks/cl100k_base.cjs",
-      "default": "./dist/ranks/cl100k_base.js"
-    },
-    "./ranks/gpt2": {
-      "types": "./dist/ranks/gpt2.d.ts",
-      "require": "./dist/ranks/gpt2.cjs",
-      "default": "./dist/ranks/gpt2.js"
-    },
-    "./ranks/p50k_base": {
-      "types": "./dist/ranks/p50k_base.d.ts",
-      "require": "./dist/ranks/p50k_base.cjs",
-      "default": "./dist/ranks/p50k_base.js"
-    },
-    "./ranks/p50k_edit": {
-      "types": "./dist/ranks/p50k_edit.d.ts",
-      "require": "./dist/ranks/p50k_edit.cjs",
-      "default": "./dist/ranks/p50k_edit.js"
-    },
-    "./ranks/r50k_base": {
-      "types": "./dist/ranks/r50k_base.d.ts",
-      "require": "./dist/ranks/r50k_base.cjs",
-      "default": "./dist/ranks/r50k_base.js"
     },
     "./ranks/o200k_base": {
       "types": "./dist/ranks/o200k_base.d.ts",
@@ -82,12 +50,6 @@
   "tsup": {
     "entry": [
       "src/index.ts",
-      "src/lite.ts",
-      "src/ranks/cl100k_base.ts",
-      "src/ranks/gpt2.ts",
-      "src/ranks/p50k_base.ts",
-      "src/ranks/p50k_edit.ts",
-      "src/ranks/r50k_base.ts",
       "src/ranks/o200k_base.ts"
     ],
     "format": [
