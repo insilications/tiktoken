@@ -4,7 +4,7 @@
   "description": "JavaScript port of tiktoken",
   "license": "MIT",
   "scripts": {
-    "buildd": "webpack --mode production",
+    "bundle": "webpack --mode production",
     "build": "rm -rf dist && tsup",
     "test": "vitest run"
   },
